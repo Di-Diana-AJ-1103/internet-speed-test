@@ -29,8 +29,9 @@ CI/CD automation has been implemented to automatically build and release new ver
     pip install -r requirements.txt
     ```
 
-    - This installs `speedtest-cli`, `pytest`, `coverage`, and `pyinstaller`.
-    - These libraries are imported inside the Python code and must be installed before running.
+    - Installs `speedtest-cli`, `pytest`, `coverage`, and `pyinstaller`
+    - These libraries are imported inside the Python code
+    - Install before running
 
 2. Run the application:
 
