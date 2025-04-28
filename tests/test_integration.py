@@ -18,14 +18,14 @@ class TestIntegration(unittest.TestCase):
             print("\nSTDOUT:\n", result.stdout)
             print("\nSTDERR:\n", result.stderr)
 
-        #test based on either success or graceful fail
+        #test based on either pass or fail
         if result.returncode == 0:
             # Only assert Ping: if it actually worked
             self.assertIn("Ping:", result.stdout)
             self.assertIn("Download Speed:", result.stdout)
             self.assertIn("Upload Speed:", result.stdout)
         else:
-            #if fail, at least check that a friendly error message is printed
+            #if fail check that error message is printed
             self.assertIn("Error", result.stderr)
 
 if __name__ == "__main__":
