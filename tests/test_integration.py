@@ -7,12 +7,12 @@ import os
 class TestIntegration(unittest.TestCase):
 
     def setUp(self):
-        """Set up the script path for testing."""
+        #Set up the script path for testing
         self.script_path = os.path.join('src', 'speed_test_app.py')
 
     @patch('subprocess.run')
     def test_run_speedtest_script(self, mock_run):
-        """Test if 'Ping:' is in output."""
+        #Test if 'Ping:' is in output
         mock_run.return_value = subprocess.CompletedProcess(
             args=[sys.executable, self.script_path],
             returncode=0,
@@ -24,7 +24,7 @@ class TestIntegration(unittest.TestCase):
 
     @patch('subprocess.run')
     def test_run_speedtest_download_output(self, mock_run):
-        """Test if 'Download Speed:' is in output."""
+        #Test if 'Download Speed:' is in output
         mock_run.return_value = subprocess.CompletedProcess(
             args=[sys.executable, self.script_path],
             returncode=0,
@@ -36,7 +36,7 @@ class TestIntegration(unittest.TestCase):
 
     @patch('subprocess.run')
     def test_run_speedtest_upload_output(self, mock_run):
-        """Test if 'Upload Speed:' is in output."""
+        #Test if 'Upload Speed:' is in output
         mock_run.return_value = subprocess.CompletedProcess(
             args=[sys.executable, self.script_path],
             returncode=0,
@@ -48,7 +48,7 @@ class TestIntegration(unittest.TestCase):
 
     @patch('subprocess.run')
     def test_run_speedtest_best_server_output(self, mock_run):
-        """Test if 'Best server based on ping:' is in output."""
+        #Test if 'Best server based on ping:' is in output
         mock_run.return_value = subprocess.CompletedProcess(
             args=[sys.executable, self.script_path],
             returncode=0,
@@ -60,7 +60,7 @@ class TestIntegration(unittest.TestCase):
 
     @patch('subprocess.run')
     def test_run_speedtest_no_crash(self, mock_run):
-        """Test that script exits normally with code 0."""
+        #Test that script exits normally with code 0
         mock_run.return_value = subprocess.CompletedProcess(
             args=[sys.executable, self.script_path],
             returncode=0,
