@@ -2,15 +2,15 @@
 
 ## Project Overview
 
-This project converts a Python CLI application into a Windows `.exe` executable that tests internet speed.
+This project converts a Python CLI application into a Windows `.exe` executable which assesses internet speed.
 
 The application measures:
 - Ping (ms)
 - Download speed (Mbps)
 - Upload speed (Mbps)
 
-The script is packaged into a `.exe` executable file using PyInstaller. 
-CI/CD automation is set up with GitHub Actions to build and release new versions automatically.
+The script is made into a `.exe` executable file using PyInstaller. 
+CI/CD automation has been implemented to automatically build and release new versions.
 
 ## Features
 
