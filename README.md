@@ -97,8 +97,3 @@ You can now run the `.exe` file directly, even on a machine that doesn't have Py
 
 - Original speed test script inspired by [PyShark's tutorial](https://pyshark.com/test-internet-speed-using-python/).
 - This project has been refactored, modularized, and expanded for DevOps final submission requirements, including CI/CD automation, testing, coverage, and packaging into an executable for single click deployment.
-
-## License
-
-This project is licensed for educational purposes.
-
