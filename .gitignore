@@ -1,0 +1,31 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build artifacts
+build/
+dist/
+*.spec
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+# PyInstaller artifacts
+*.exe
+*.zip
+
+# VSCode settings (optional, if you use VSCode)
+.vscode/
+
+# MacOS junk files
+.DS_Store
