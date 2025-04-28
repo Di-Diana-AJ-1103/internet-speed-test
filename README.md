@@ -1,5 +1,24 @@
+# Internet Speed Test CLI Executable
 
----
+## Project Overview
+
+This project converts a Python CLI application into a Windows executable (.exe) that tests internet speed.
+
+The application measures:
+- Ping (ms)
+- Download speed (Mbps)
+- Upload speed (Mbps)
+
+The script is packaged into a `.exe` file using PyInstaller, and CI/CD automation is set up with GitHub Actions to build and release new versions automatically.
+
+## Features
+
+- Converts a Python script into a standalone Windows `.exe`
+- Displays ping, download, and upload speeds
+- Keeps CLI open until the user presses ENTER to exit
+- Automated testing with unittest and coverage.py
+- GitHub Actions CI/CD pipeline builds and releases executable
+- Final `.exe` is downloadable from GitHub Releases
 
 ## Install and Run Locally
 
@@ -76,7 +95,7 @@ You can now run the `.exe` file directly, even on a machine that doesn't have Py
 
 ## Acknowledgments
 
-- Original speed test script by [PyShark's tutorial](https://pyshark.com/test-internet-speed-using-python/).
+- Original speed test script inspired by [PyShark's tutorial](https://pyshark.com/test-internet-speed-using-python/).
 - This project has been refactored, modularized, and expanded for DevOps final submission requirements, including CI/CD automation, testing, coverage, and packaging into an executable for single click deployment.
 
 ## License
