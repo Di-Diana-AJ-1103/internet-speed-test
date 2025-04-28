@@ -1,31 +1,33 @@
-# Python artifacts
+#Byte-compiled / optimized / DLL files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Build artifacts
+#PyInstaller build folders
 build/
 dist/
 *.spec
 
-# Coverage reports
+#Test coverage reports
 htmlcov/
 .coverage
 coverage.xml
 
-# Virtual environments
+#Virtual environments
 .env/
 .venv/
 env/
 venv/
 
-# PyInstaller artifacts
-*.exe
-*.zip
-
-# VSCode settings (optional, if you use VSCode)
+#VSCode and IDE settings 
 .vscode/
+.idea/
 
-# MacOS junk files
+#Windows junk files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+#macOS junk files
 .DS_Store
