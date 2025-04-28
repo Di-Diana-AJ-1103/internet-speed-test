@@ -2,7 +2,7 @@ import sys
 import speedtest
 
 def run_speedtest():
-    """Run speed test and return results as a dictionary."""
+    #Run speed test and return results as a dictionary
     st = speedtest.Speedtest()
 
     #get best server
@@ -21,7 +21,7 @@ def run_speedtest():
     }
 
 def display_results(results):
-    """Display the speedtest results nicely."""
+    #Display the speedtest results nicely
     print("\n=== Internet Speed Test Results ===")
     print(f"Ping: {results['ping']} ms")
     print(f"Download Speed: {results['download']} Mbps")
