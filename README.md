@@ -88,6 +88,7 @@ You can now run the `.exe` file directly, even on a machine that doesn't have Py
 | Unit Testing     | unittest + coverage.py|
 | CI/CD Automation | GitHub Actions        |
 | Deployment       | GitHub Releases       |
+
 Note: The application uses GitHub Releases as its deployment platform.
 
 ## Authors
