@@ -9,7 +9,8 @@ The application measures:
 - Download speed (Mbps)
 - Upload speed (Mbps)
 
-The script is packaged into a `.exe` executable file using PyInstaller, and CI/CD automation is set up with GitHub Actions to build and release new versions automatically.
+The script is packaged into a `.exe` executable file using PyInstaller. 
+CI/CD automation is set up with GitHub Actions to build and release new versions automatically.
 
 ## Features
 
