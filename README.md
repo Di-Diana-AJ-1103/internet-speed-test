@@ -2,23 +2,23 @@
 
 ## Project Overview
 
-This project converts a Python CLI application into a Windows executable (.exe) that tests internet speed.
+This project converts a Python CLI application into a Windows `.exe` executable that tests internet speed.
 
 The application measures:
 - Ping (ms)
 - Download speed (Mbps)
 - Upload speed (Mbps)
 
-The script is packaged into a `.exe` file using PyInstaller, and CI/CD automation is set up with GitHub Actions to build and release new versions automatically.
+The script is packaged into a `.exe` executable file using PyInstaller, and CI/CD automation is set up with GitHub Actions to build and release new versions automatically.
 
 ## Features
 
-- Converts a Python script into a standalone Windows `.exe`
+- Converts a Python script into a Windows `.exe` executable
 - Displays ping, download, and upload speeds
 - Keeps CLI open until the user presses ENTER to exit
-- Automated testing with unittest and coverage.py
+- Automated testing with unittest + coverage.py
 - GitHub Actions CI/CD pipeline builds and releases executable
-- Final `.exe` is downloadable from GitHub Releases
+- Final `.exe` executable is downloadable from GitHub Releases
 
 ## Install and Run Locally
 
@@ -37,7 +37,7 @@ The script is packaged into a `.exe` file using PyInstaller, and CI/CD automatio
     python src/speed_test_app.py
     ```
 
-3. After the speed test results are displayed, the application will wait for the user to press ENTER before closing the terminal.
+3. Application will wait for the user to press ENTER before closing the terminal after the speed test results are displayed.
 
 ## Build Executable Locally
 
