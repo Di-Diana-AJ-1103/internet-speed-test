@@ -98,4 +98,4 @@ Note: The application uses GitHub Releases as its deployment platform.
 ## Acknowledgments
 
 - Original internet speed test project inspired by [PyShark's tutorial](https://pyshark.com/test-internet-speed-using-python/).
-- This project received multiple optimizational treatments in preparation for DevOps delivery requirements through implementation of CI/CD automation, testing, coverage measurement, distribution as a single click deployable executable.
+- This project received multiple optimizational treatments in preparation for DevOps delivery requirements through implementation of CI/CD automation, testing, coverage measurement, and distribution as a single click deployable executable.
