@@ -29,7 +29,7 @@ The script is packaged into a `.exe` executable file using PyInstaller, and CI/C
     ```
 
     - This installs `speedtest-cli`, `pytest`, `coverage`, and `pyinstaller`.
-    - These libraries are **imported inside the Python code** and must be installed before running.
+    - These libraries are imported inside the Python code and must be installed before running.
 
 2. Run the application:
 
