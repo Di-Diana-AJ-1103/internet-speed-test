@@ -22,7 +22,7 @@ The script is packaged into a `.exe` file using PyInstaller, and CI/CD automatio
 
 ## Install and Run Locally
 
-1. **Install all required libraries** by running:
+1. Run the following command to install all required libraries:
 
     ```bash
     pip install -r requirements.txt
@@ -31,23 +31,23 @@ The script is packaged into a `.exe` file using PyInstaller, and CI/CD automatio
     - This installs `speedtest-cli`, `pytest`, `coverage`, and `pyinstaller`.
     - These libraries are **imported inside the Python code** and must be installed before running.
 
-2. **Run the application**:
+2. Run the application:
 
     ```bash
     python src/speed_test_app.py
     ```
 
-3. **After the speed test results are displayed**, the application will **wait for the user to press ENTER** before closing the terminal.
+3. After the speed test results are displayed, the application will wait for the user to press ENTER before closing the terminal.
 
 ## Build Executable Locally
 
-1. Install PyInstaller if you haven't already:
+1. Install PyInstaller (if you haven't already):
 
     ```bash
     pip install pyinstaller
     ```
 
-2. Build the executable:
+2. Build executable:
 
     ```bash
     pyinstaller --onefile src/speed_test_app.py
@@ -76,7 +76,7 @@ You can now run the `.exe` file directly, even on a machine that doesn't have Py
     coverage report -m
     ```
 
-- Test Coverage Goal: **≥ 75%**
+- Test Coverage Goal: ≥ 75%
 
 ## Technologies Used
 
@@ -88,6 +88,7 @@ You can now run the `.exe` file directly, even on a machine that doesn't have Py
 | Unit Testing     | unittest + coverage.py|
 | CI/CD Automation | GitHub Actions        |
 | Deployment       | GitHub Releases       |
+Note: The application uses GitHub Releases as its deployment platform.
 
 ## Authors
 
@@ -95,5 +96,5 @@ You can now run the `.exe` file directly, even on a machine that doesn't have Py
 
 ## Acknowledgments
 
-- Original speed test script inspired by [PyShark's tutorial](https://pyshark.com/test-internet-speed-using-python/).
-- This project has been refactored, modularized, and expanded for DevOps final submission requirements, including CI/CD automation, testing, coverage, and packaging into an executable for single click deployment.
+- Original internet speed test project inspired by [PyShark's tutorial](https://pyshark.com/test-internet-speed-using-python/).
+- This project received multiple optimizational treatments in preparation for DevOps delivery requirements through implementation of CI/CD automation, testing, coverage measurement, distribution as a single click deployable executable.
