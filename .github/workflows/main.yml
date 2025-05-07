@@ -37,7 +37,7 @@ jobs:
         run: |
           echo "Packaging the Python script..."
           mkdir -p dist
-          cp src/app.py dist/
+          cp src/speed_test_app.py dist/
           echo "Deployment complete. Packaged script is in the 'dist' folder."
 
       #Step 6: Upload the packaged script as an artifact
