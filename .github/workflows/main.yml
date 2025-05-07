@@ -3,51 +3,50 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main  #Trigger pipeline on commits to the main branch
+      - main  # Trigger pipeline on commits to the main branch
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      #Step 1: Checkout the code
+      # Step 1: Checkout the code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      #Step 2: Set up Python environment
+      # Step 2: Set up Python environment
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.13'
+          python-version: '3.10'
 
-      #Step 3: Install dependencies
+      # Step 3: Install dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip install pyinstaller  # Install PyInstaller for creating executables
 
-      #Step 4: Run tests automatically
+      # Step 4: Run tests automatically
       - name: Run Tests
         run: |
           coverage run -m unittest discover
           coverage report -m
 
-      #Step 5: Deploy the application
-      - name: Deploy Application
+      # Step 5: Create an Executable
+      - name: Create Executable
         run: |
-          echo "Packaging the Python script..."
-          mkdir -p dist
-          cp src/speed_test_app.py dist/
-          echo "Deployment complete. Packaged script is in the 'dist' folder."
+          pyinstaller --onefile src/speed_test_app.py
+          echo "Executable created in the 'dist' folder."
 
-      #Step 6: Upload the packaged script as an artifact
-      - name: Upload Packaged Script
+      # Step 6: Upload the executable as an artifact
+      - name: Upload Executable
         uses: actions/upload-artifact@v4
         with:
-          name: packaged-script
-          path: dist/
+          name: speed-test-executable
+          path: dist/speed_test_app  # Adjust the path for the generated executable
 
-      #Step 7: Notify Success 
+      # Step 7: Notify Success
       - name: Notify Success
         if: success()
         run: |
