@@ -4,10 +4,6 @@ __pycache__/
 *.pyo
 *.pyd
 
-#PyInstaller build folders
-build/
-dist/
-*.spec
 
 #Test coverage reports
 htmlcov/
