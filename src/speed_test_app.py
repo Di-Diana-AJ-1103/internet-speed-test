@@ -29,6 +29,7 @@ def display_results(results):
     print("===================================")
 
 def main():
+    #Main function to run the speed test and show results until user kills it
     try:
         results = run_speedtest()
         display_results(results)
